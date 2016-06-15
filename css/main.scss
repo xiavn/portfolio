@@ -1,0 +1,15 @@
+$col1: #c56666;
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: $col1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
