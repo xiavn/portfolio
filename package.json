@@ -19,16 +19,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xiavn/framework.git"
+    "url": "git+https://github.com/xiavn/portfolio.git"
   },
   "keywords": [
-    "workflow"
+    "portfolio"
   ],
   "author": "Lianne Turnbull",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xiavn/framework/issues"
+    "url": "https://github.com/xiavn/portfolio/issues"
   },
-  "homepage": "https://github.com/xiavn/framework#readme",
+  "homepage": "https://github.com/xiavn/portfolio#readme",
   "description": ""
 }
