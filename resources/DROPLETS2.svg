@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="6px" viewBox="0 0 20 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>DROPLETS</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.8">
+        <g id="Desktop-Landscape" transform="translate(-649.000000, -444.000000)" fill="#D6E1EB">
+            <g id="Island-Group-2" transform="translate(619.000000, 20.000000)">
+                <g id="Big-Island" transform="translate(4.000000, 6.000000)">
+                    <g id="DROPLETS" transform="translate(26.000000, 418.000000)">
+                        <circle id="Oval-11" cx="4.5" cy="0.5" r="0.5"></circle>
+                        <circle id="Oval-11" cx="3.5" cy="4.5" r="0.5"></circle>
+                        <circle id="Oval-11" cx="1" cy="2" r="1"></circle>
+                        <circle id="Oval-11" cx="16" cy="5" r="1"></circle>
+                        <circle id="Oval-11" cx="6" cy="5" r="1"></circle>
+                        <circle id="Oval-11" cx="11" cy="2" r="1"></circle>
+                        <circle id="Oval-11" cx="19" cy="4" r="1"></circle>
+                        <circle id="Oval-11" cx="7.5" cy="2.5" r="0.5"></circle>
+                        <circle id="Oval-11" cx="19.5" cy="1.5" r="0.5"></circle>
+                        <circle id="Oval-11" cx="14.5" cy="0.5" r="0.5"></circle>
+                        <circle id="Oval-11" cx="13.5" cy="3.5" r="0.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

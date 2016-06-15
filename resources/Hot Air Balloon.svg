@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="57px" height="89px" viewBox="0 0 57 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Hot Air Balloon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop-Landscape" transform="translate(-77.000000, -396.000000)" stroke-width="2">
+            <g id="Hot-Air-Balloon" transform="translate(78.000000, 397.000000)">
+                <g id="Back-Lines" transform="translate(10.077670, 44.931866)" stroke="#57595B" fill="#A0BAD9" opacity="0.8">
+                    <path d="M0,0 L10.1456311,26.9591199" id="Line"></path>
+                    <path d="M25.2330097,0 L34.8446602,26.9591199" id="Line" transform="translate(30.038835, 13.479560) scale(-1, 1) translate(-30.038835, -13.479560) "></path>
+                </g>
+                <g id="Basket" transform="translate(17.000000, 72.000000)" stroke="#BF8553" fill="#F0B179">
+                    <rect id="Rectangle-52" x="0" y="0" width="21" height="15" rx="3"></rect>
+                    <path d="M1,4.52861019 L20.7572816,4.52861019" id="Line"></path>
+                    <path d="M4.53398058,0 L4.53398058,13.743865" id="Line"></path>
+                    <path d="M10.5339806,0 L10.5339806,13.743865" id="Line"></path>
+                    <path d="M16.5339806,0 L16.5339806,13.743865" id="Line"></path>
+                </g>
+                <g id="Balloon" stroke="#814B4B">
+                    <path d="M27.5,54.4468499 C42.6878306,54.4468499 55,42.2585074 55,27.223425 C55,12.1883425 42.6878306,0 27.5,0 C12.3121694,0 0,12.1883425 0,27.223425 C0,42.2585074 12.3121694,54.4468499 27.5,54.4468499 Z" id="Oval-39" fill="#C56666"></path>
+                    <path d="M27.5,0.264305097 L27.5,53.127966" id="Line" opacity="0.297166511"></path>
+                    <path d="M49.8677374,27.223425 C49.8677374,12.1883425 39.8998204,0 27.6037716,0 C15.3077228,0 5.33980583,12.1883425 5.33980583,27.223425 C5.33980583,42.2585074 15.3077228,54.4468499 27.6037716,54.4468499 C39.8998204,54.4468499 49.8677374,42.2585074 49.8677374,27.223425 Z" id="Oval-39" opacity="0.297166511"></path>
+                    <path d="M27.4239866,0 C20.8305076,0 15.4854369,12.1883425 15.4854369,27.223425 C15.4854369,42.2585074 20.8305076,54.4468499 27.4239866,54.4468499 C34.0174655,54.4468499 39.3625362,42.2585074 39.3625362,27.223425 C39.3625362,12.1883425 34.0174655,0 27.4239866,0 Z" id="Oval-39" opacity="0.297166511"></path>
+                    <rect id="Rectangle-51" fill="#C56666" x="19.7572816" y="53.3896295" width="15.4854369" height="6.87193252" rx="3"></rect>
+                    <g id="Group" transform="translate(27.805825, 10.658034) scale(1, -1) translate(-27.805825, -10.658034) translate(3.805825, 6.158034)" fill="#C56666">
+                        <path d="M2.19102202,4.643051 L45.1969086,4.643051" id="Line"></path>
+                        <path d="M0.192713901,1.52861023 L47.1956596,1.52861023" id="Line"></path>
+                        <path d="M5.2683774,7.75749174 L42.1165049,7.75749174" id="Line"></path>
+                    </g>
+                    <g id="Group" transform="translate(3.805825, 39.288815)" fill="#C56666">
+                        <path d="M2.19417475,4.643051 L45.1941735,4.643051" id="Line"></path>
+                        <path d="M0.194174752,1.52861023 L47.1941757,1.52861023" id="Line"></path>
+                        <path d="M5.2683774,7.75749174 L42.1165049,7.75749174" id="Line"></path>
+                    </g>
+                </g>
+                <g id="Front-Lines" transform="translate(6.407767, 44.931866)" stroke="#57595B" fill="#A0BAD9" opacity="0.8">
+                    <path d="M31.7718447,0.264305097 L42.184466,27.4877301" id="Line" transform="translate(36.844660, 13.743865) scale(-1, 1) translate(-36.844660, -13.743865) "></path>
+                    <path d="M0.266990291,0.264305097 L11.2135922,27.4877301" id="Line"></path>
+                    <path d="M16.0194175,16.0590273 L16.0194175,26.0834006" id="Line"></path>
+                    <path d="M26.1650486,16.0590211 L26.1650486,26.0766267" id="Line"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
