@@ -1,4 +1,5 @@
 $col1: #3e494d;
+$col2: #abcc85;
 $nav: #576a7c;
 $level4: 0px 14px 28px 0px rgba(0,0,0,0.25), 0px 10px 10px 0px rgba(0,0,0,0.22);
 
@@ -8,9 +9,14 @@ html {
 
 body {
 	background-color: #ffffff;
-	font-family: Raleway;
+	font: 16px Raleway, sans-serif;
 	margin: 0;
+}
 
+h2 {
+	color: $col2;
+	font: 2.5rem Satisfy, cursive;
+	line-height: 3.5rem;
 }
 
 main {
@@ -28,7 +34,17 @@ section {
 nav {
 	background-color: $nav;
 	box-shadow: $level4;
-	padding-left: 64px;
+	height: 80px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-title {
+	margin-left: 64px;
+}
+
+.nav-menu {
 }
 
 *,
