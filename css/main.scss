@@ -1,10 +1,36 @@
 $col1: #3e494d;
 $col2: #abcc85;
 $nav: #576a7c;
-$level4: 0px 14px 28px 0px rgba(0,0,0,0.25), 0px 10px 10px 0px rgba(0,0,0,0.22);
+$white: #fff;
 
-* {
-	border: 1px solid red;
+//Mixin to create box-shadows similiar to the Google Design Specs
+//Based on: https://css-tricks.com/snippets/sass/material-shadows-mixin/
+@mixin box-shadow($level) {
+	@if $level < 1 {
+		box-shadow: none;
+	} @else if $level > 5 {
+		box-shadow: bottom-shadow(5), top-shadow(5);
+	} @else {
+		box-shadow: bottom-shadow($level), top-shadow($level);
+	}
+}
+
+//Function to generate the top-shadow of the box-shadow mixin
+//Based on these figures: https://lh3.googleusercontent.com/-C-BFrMtT-cw/U6tNB2jQe4I/AAAAAAAAEHU/8JbHc_7vkLQ/w480-h480/Screen%2BShot%2B2014-06-26%2Bat%2B00.28.09.png#
+@function top-shadow($level) {
+	$y-offset: nth(1 3 10 14 19, $level) * 1px;
+	$blur: nth(1.5 3 10 14 19, $level) * 4px;
+	$color: rgba(black, nth(.12 .16 .19 .25 .30, $level));
+
+	@return 0 $y-offset $blur $color;
+}
+
+@function bottom-shadow($level) {
+	$y-offset: nth(1 3 6 10 15, $level) * 1px;
+	$blur: nth(1 3 3 5 6, $level) * 4px;
+	$color: rgba(black, nth(.24 .23 .23 .22 .22, $level));
+
+	@return 0 $y-offset $blur $color;
 }
 
 html {
@@ -12,7 +38,7 @@ html {
 }
 
 body {
-	background-color: #ffffff;
+	background-color: $white;
 	font: 16px Raleway, sans-serif;
 	margin: 0;
 }
@@ -36,8 +62,9 @@ section {
 }
 
 nav {
+	@include box-shadow(4);
+	align-items: center;
 	background-color: $nav;
-	box-shadow: $level4;
 	display: flex;
 	flex-flow: row nowrap;
 	height: 80px;
@@ -45,17 +72,33 @@ nav {
 
 .nav-title {
 	flex: 1;
+	margin-left: 64px;
 }
 
 .nav-menu {
 	display: flex;
-	flex: 1;
+	flex: 2;
 	justify-content: flex-end;
 	list-style: none;
+	margin-right: 160px;
 
-	a {
-		padding: 1em;
-		text-decoration: none;
+	li {
+		padding: .5rem;
+
+		&:first-child {
+			padding-left: .25rem;
+		}
+
+		&:last-child {
+			padding-right: .25em;
+		}
+
+		a {
+			font-size: 1.5rem;
+			font-weight: bold;
+			text-decoration: none;
+			color: $white;
+		}
 	}
 }
 
