@@ -1,7 +1,15 @@
 $col1: #3e494d;
 $col2: #abcc85;
+$col3: #6c86a2;
+$col4: #cbd0c6;
+$col5: #c56666;
 $nav: #576a7c;
 $white: #fff;
+$shadow: 0 2px 4px rgba(0, 0, 0, .24);
+$xsmall: 480px;
+$small: 768px;
+$medium: 992px;
+$large: 1200px;
 
 //Mixin to create box-shadows similiar to the Google Design Specs
 //Based on: https://css-tricks.com/snippets/sass/material-shadows-mixin/
@@ -20,7 +28,7 @@ $white: #fff;
 @function top-shadow($level) {
 	$y-offset: nth(1 3 10 14 19, $level) * 1px;
 	$blur: nth(1.5 3 10 14 19, $level) * 4px;
-	$color: rgba(black, nth(.12 .16 .19 .25 .30, $level));
+	$color: rgba(0, 0, 0, nth(.12 .16 .19 .25 .30, $level));
 
 	@return 0 $y-offset $blur $color;
 }
@@ -28,37 +36,83 @@ $white: #fff;
 @function bottom-shadow($level) {
 	$y-offset: nth(1 3 6 10 15, $level) * 1px;
 	$blur: nth(1 3 3 5 6, $level) * 4px;
-	$color: rgba(black, nth(.24 .23 .23 .22 .22, $level));
+	$color: rgba(0, 0, 0, nth(.24 .23 .23 .22 .22, $level));
 
 	@return 0 $y-offset $blur $color;
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 html {
 	box-sizing: border-box;
+	font: 12px Raleway, sans-serif;
+
+	@media only screen and (min-width : $small) {
+		font-size: 16px;
+	}
 }
 
 body {
 	background-color: $white;
-	font: 16px Raleway, sans-serif;
 	margin: 0;
+	text-shadow: $shadow;
+}
+
+h1 {
+	color: $col2;
+	font: 4rem Satisfy, cursive;
+	line-height: 5rem;
+	margin: 40px 0 0 80px;
+
 }
 
 h2 {
 	color: $col2;
 	font: 2.5rem Satisfy, cursive;
+	height: 3.5rem;
 	line-height: 3.5rem;
+	overflow: hidden;
+}
+
+a {
+	color: $col2;
+	font-weight: bold;
+	text-decoration: none;
+
+	&:hover {
+		border-bottom: 1px dotted;
+	}
 }
 
 main {
+	display: flex;
+	flex-flow: column wrap;
 	max-width: 1280px;
 }
 
 section {
-	height: 100vh;
+	flex: 1;
+	min-height: 100vh;
 }
 
 .home {
 	background-color: $col1;
+}
+
+.skills {
+	background-color: $col3;
+}
+
+.portfolio {
+	background-color: $col4;
+}
+
+.contact {
+	background-color: $col5;
 }
 
 nav {
@@ -68,42 +122,78 @@ nav {
 	display: flex;
 	flex-flow: row nowrap;
 	height: 80px;
+	justify-content: center;
 }
 
 .nav-title {
-	flex: 1;
+	display: none;
+	flex: 1 1 auto;
 	margin-left: 64px;
+
+	@media only screen and (min-width : $small) {
+		display: block;
+    }
+}
+
+ul {
+	padding: 0;
 }
 
 .nav-menu {
 	display: flex;
-	flex: 2;
-	justify-content: flex-end;
+	flex: 2 1 auto;
+	justify-content: center;
 	list-style: none;
-	margin-right: 160px;
+
+	@media only screen and (min-width : $small) {
+		justify-content: flex-end;
+		margin-right: 64px;
+    }
 
 	li {
-		padding: .5rem;
+		padding: 1rem;
 
 		&:first-child {
-			padding-left: .25rem;
+			padding-left: 0;
 		}
 
 		&:last-child {
-			padding-right: .25em;
+			padding-right: 0;
 		}
 
 		a {
-			font-size: 1.5rem;
-			font-weight: bold;
-			text-decoration: none;
 			color: $white;
+			font-size: 1.5rem;
+		}
+
+		.active {
+			border-bottom: 1px dotted;
+			color: $col2;
 		}
 	}
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	max-width: 960px;
+
+	.column {
+		flex: 1;
+		padding: 0 8px;
+
+		p {
+			color: $white;
+			line-height: 1.25rem;
+			margin: 1.25rem 0;
+		}
+	}
+
+	.two-thirds {
+		flex: 2;
+	}
 }
+
+
