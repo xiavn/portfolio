@@ -110,6 +110,7 @@ main {
 section {
 	flex: 1;
 	min-height: 100vh;
+	padding: 0 0 grid(5);
 }
 
 .home {
@@ -189,6 +190,7 @@ ul {
 .row {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: center;
 	margin: 0 auto;
 	max-width: 960px;
 
@@ -220,6 +222,16 @@ ul {
 	.column {
 		flex: 0 0 auto;
 	}
+}
+
+.portfolio-square {
+	background-color: $col1;
+	flex-basis: auto;
+	margin: grid(1);
+	min-height: 216px;
+	min-width: 216px;
+	padding: 0 grid(1);
+	text-align: center;
 }
 
 .button {

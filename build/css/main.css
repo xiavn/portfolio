@@ -55,7 +55,8 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding: 0 0 40px; }
 
 .home {
   background-color: #3e494d; }
@@ -134,6 +135,9 @@ ul {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
   max-width: 960px; }
   .row .column, .skills-row .column {
@@ -163,6 +167,16 @@ ul {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto; }
+
+.portfolio-square {
+  background-color: #3e494d;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  margin: 8px;
+  min-height: 216px;
+  min-width: 216px;
+  padding: 0 8px;
+  text-align: center; }
 
 .button {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24), 0 1px 6px rgba(0, 0, 0, 0.12);
