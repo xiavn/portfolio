@@ -20,7 +20,7 @@ h1 {
   color: #abcc85;
   font: 4rem Satisfy, cursive;
   line-height: 5rem;
-  margin: 40px 0 0;
+  margin: 0;
   width: 100%; }
 
 h2 {
@@ -30,11 +30,15 @@ h2 {
   line-height: 3.5rem;
   overflow: hidden; }
 
-h3 {
+h3, h4 {
   font-size: 1.5rem;
   line-height: 2rem;
   margin: 8px;
   width: 100%; }
+
+h4 {
+  color: #abcc85;
+  font-family: Satisfy, cursive; }
 
 a {
   color: #abcc85;
@@ -84,7 +88,8 @@ nav {
   height: 80px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-bottom: 40px; }
 
 .nav-title {
   display: none;
@@ -172,11 +177,34 @@ ul {
   background-color: #3e494d;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   margin: 8px;
-  min-height: 216px;
-  min-width: 216px;
-  padding: 0 8px;
-  text-align: center; }
+  height: 216px;
+  width: 216px;
+  padding: 8px;
+  text-align: justify; }
+  .portfolio-square p {
+    font-size: 0.75rem;
+    padding: 0;
+    margin: 0; }
+  .portfolio-square span {
+    color: #a0bad8;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 100%; }
+  .portfolio-square .button {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
 
 .button {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24), 0 1px 6px rgba(0, 0, 0, 0.12);

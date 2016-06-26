@@ -3,6 +3,7 @@ $col2: #abcc85;
 $col3: #6c86a2;
 $col4: #cbd0c6;
 $col5: #c56666;
+$col6: #a0bad8;
 $nav: #576a7c;
 $white: #fff;
 $shadow: 0 2px 4px rgba(0, 0, 0, .24);
@@ -72,7 +73,7 @@ h1 {
 	color: $col2;
 	font: 4rem Satisfy, cursive;
 	line-height: 5rem;
-	margin: grid(5) 0 0;
+	margin: 0;
 	width: 100%;
 }
 
@@ -89,6 +90,12 @@ h3 {
 	line-height: 2rem;
 	margin: grid(1);
 	width: 100%;
+}
+
+h4 {
+	@extend h3;
+	color: $col2;
+	font-family: Satisfy, cursive;
 }
 
 a {
@@ -137,6 +144,7 @@ nav {
 	flex-flow: row nowrap;
 	height: grid(10);
 	justify-content: center;
+	margin-bottom: grid(5);
 }
 
 .nav-title {
@@ -227,11 +235,31 @@ ul {
 .portfolio-square {
 	background-color: $col1;
 	flex-basis: auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-flow: row wrap;
 	margin: grid(1);
-	min-height: 216px;
-	min-width: 216px;
-	padding: 0 grid(1);
-	text-align: center;
+	height: 216px;
+	width: 216px;
+	padding: grid(1);
+	text-align: justify;
+
+	p {
+		font-size: 0.75rem;
+		padding: 0;
+		margin: 0;
+	}
+
+	span {
+		color: $col6;
+		align-self: flex-end;
+		width: 100%;
+	}
+
+	.button {
+		align-self: flex-end;
+	}
 }
 
 .button {
