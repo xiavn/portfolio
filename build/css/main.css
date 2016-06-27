@@ -38,7 +38,8 @@ h3, h4 {
 
 h4 {
   color: #abcc85;
-  font-family: Satisfy, cursive; }
+  font-family: Satisfy, cursive;
+  font-size: 24px; }
 
 a {
   color: #abcc85;
@@ -174,34 +175,50 @@ ul {
             flex: 0 0 auto; }
 
 .portfolio-square {
+  background-image: url(../img/rumour.png);
   background-color: #3e494d;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
   margin: 8px;
   height: 216px;
   width: 216px;
-  padding: 8px;
-  text-align: justify; }
+  text-align: justify;
+  position: relative;
+  overflow: hidden; }
+  .portfolio-square .overlay {
+    position: absolute;
+    top: 168px;
+    background-color: rgba(62, 73, 77, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    padding: 0 8px;
+    height: 216px;
+    width: 216px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+    .portfolio-square .overlay:hover {
+      background-color: rgba(62, 73, 77, 0.75);
+      top: 0;
+      padding: 8px; }
   .portfolio-square p {
-    font-size: 0.75rem;
+    font-size: 12px;
     padding: 0;
     margin: 0; }
   .portfolio-square span {
     color: #a0bad8;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    width: 100%; }
+    width: 100%;
+    font-size: 16px; }
   .portfolio-square .button {
     -ms-flex-item-align: end;
         align-self: flex-end; }
@@ -220,7 +237,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: .75rem;
+  font-size: 12px;
   font-weight: bold;
   height: 24px;
   -webkit-box-pack: center;

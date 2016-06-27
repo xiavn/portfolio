@@ -96,6 +96,7 @@ h4 {
 	@extend h3;
 	color: $col2;
 	font-family: Satisfy, cursive;
+	font-size: 24px;
 }
 
 a {
@@ -233,20 +234,38 @@ ul {
 }
 
 .portfolio-square {
+	background-image: url(../img/rumour.png);
 	background-color: $col1;
 	flex-basis: auto;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	flex-flow: row wrap;
 	margin: grid(1);
 	height: 216px;
 	width: 216px;
-	padding: grid(1);
 	text-align: justify;
+	position: relative;
+	overflow: hidden;
+
+	.overlay {
+		position: absolute;
+		top: 168px;
+		background-color: rgba($col1, .5);
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-flow: row wrap;
+		padding: 0 grid(1);
+		height: 216px;
+		width: 216px;
+		transition: all 1s ease-in-out;
+
+		&:hover {
+			background-color: rgba($col1, .75);
+			top: 0;
+			padding: grid(1);
+		}
+	}
 
 	p {
-		font-size: 0.75rem;
+		font-size: 12px;
 		padding: 0;
 		margin: 0;
 	}
@@ -255,6 +274,7 @@ ul {
 		color: $col6;
 		align-self: flex-end;
 		width: 100%;
+		font-size: 16px;
 	}
 
 	.button {
@@ -271,7 +291,7 @@ ul {
 	border-radius: 2px;
 	color: $col1;
 	display: flex;
-	font-size: .75rem;
+	font-size: 12px;
 	font-weight: bold;
 	height: grid(3);
 	justify-content: center;
