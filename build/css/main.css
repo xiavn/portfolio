@@ -164,6 +164,14 @@ ul {
         -ms-flex: 2;
             flex: 2; }
 
+.header-img {
+  margin-top: -64px;
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 100%; }
+
 .skills-row {
   -ms-flex-line-pack: distribute;
       align-content: space-around;
@@ -175,6 +183,7 @@ ul {
             flex: 0 0 auto; }
 
 .portfolio-square {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
   background-image: url(../img/rumour.png);
   background-color: #3e494d;
   -ms-flex-preferred-size: auto;
@@ -221,7 +230,8 @@ ul {
     font-size: 16px; }
   .portfolio-square .button {
     -ms-flex-item-align: end;
-        align-self: flex-end; }
+        align-self: flex-end;
+    cursor: pointer; }
 
 .button {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24), 0 1px 6px rgba(0, 0, 0, 0.12);
@@ -246,3 +256,10 @@ ul {
   line-height: 1rem;
   margin: 4px;
   width: 80px; }
+
+.scaling-svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0; }

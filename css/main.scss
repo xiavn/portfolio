@@ -223,6 +223,15 @@ ul {
 	}
 }
 
+.header-img {
+	margin-top: -64px;
+	position: relative; 
+	height: 0; 
+	width: 100%; 
+	padding: 0;
+	padding-bottom: 100%; 
+}
+
 .skills-row {
 	@extend .row;
 	align-content: space-around;
@@ -234,6 +243,7 @@ ul {
 }
 
 .portfolio-square {
+	@include box-shadow(3);
 	background-image: url(../img/rumour.png);
 	background-color: $col1;
 	flex-basis: auto;
@@ -279,6 +289,7 @@ ul {
 
 	.button {
 		align-self: flex-end;
+		cursor: pointer;
 	}
 }
 
@@ -300,4 +311,11 @@ ul {
 	width: grid(10);
 }
 
+.scaling-svg {
+	position: absolute; 
+	height: 100%; 
+	width: 100%; 
+	left: 0; 
+	top: 0;
+}
 
