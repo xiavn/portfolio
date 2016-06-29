@@ -65,6 +65,7 @@ gulp.task('watch', function() {
 	gulp.watch('js/*.js', ['scripts']);
 	gulp.watch('css/**/*.scss', ['styles']);
 	gulp.watch('*.html', ['minify']);
+	gulp.watch('img/*', ['image']);
 });
 
 gulp.task('default', ['scripts', 'styles', 'minify', 'watch']);
