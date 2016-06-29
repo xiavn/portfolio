@@ -119,6 +119,10 @@ section {
 	flex: 1;
 	min-height: 100vh;
 	padding: 0 0 grid(5);
+
+	&:last-child {
+		padding: 0;
+	}
 }
 
 .home {
@@ -319,3 +323,60 @@ ul {
 	top: 0;
 }
 
+form {
+	margin: 0 auto;
+	label {
+		display: block;
+		margin-top: grid(2);
+		margin-bottom: -24px;
+		font: 2.5rem Satisfy, cursive;
+		line-height: 3.5rem;
+		color: $col2;
+		z-index: 2;
+		position: relative;
+	}
+
+	.text {
+		position: relative;
+		z-index: 1;
+		background-color: $nav;
+		border: none;
+		width: grid(38);
+	}
+
+	input.text {
+		height: grid(4);
+	}
+
+	textarea.text {
+		height: grid(20);
+		display: block;
+		margin-bottom: grid(2.5);
+	}
+
+	.button {
+		display: inline;
+	}
+
+	.buttons {
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+.social-bar {
+	flex-basis: 100%;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	align-self: flex-end;
+}
+
+.social-btn {
+	width: grid(8);
+	height: grid(8);
+	background-color: $white;
+	border: 2px solid $col3;
+	border-radius: 50%;
+	margin: grid(1);
+}

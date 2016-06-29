@@ -62,6 +62,8 @@ section {
           flex: 1;
   min-height: 100vh;
   padding: 0 0 40px; }
+  section:last-child {
+    padding: 0; }
 
 .home {
   background-color: #3e494d; }
@@ -263,3 +265,53 @@ ul {
   width: 100%;
   left: 0;
   top: 0; }
+
+form {
+  margin: 0 auto; }
+  form label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: -24px;
+    font: 2.5rem Satisfy, cursive;
+    line-height: 3.5rem;
+    color: #abcc85;
+    z-index: 2;
+    position: relative; }
+  form .text {
+    position: relative;
+    z-index: 1;
+    background-color: #576a7c;
+    border: none;
+    width: 304px; }
+  form input.text {
+    height: 32px; }
+  form textarea.text {
+    height: 160px;
+    display: block;
+    margin-bottom: 20px; }
+  form .button {
+    display: inline; }
+  form .buttons {
+    margin: 0 auto;
+    text-align: center; }
+
+.social-bar {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
+.social-btn {
+  width: 64px;
+  height: 64px;
+  background-color: #fff;
+  border: 2px solid #6c86a2;
+  border-radius: 50%;
+  margin: 8px; }
