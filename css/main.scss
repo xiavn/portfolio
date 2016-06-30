@@ -228,12 +228,6 @@ ul {
 }
 
 .header-img {
-	margin-top: -64px;
-	position: relative; 
-	height: 0; 
-	width: 100%; 
-	padding: 0;
-	padding-bottom: 100%; 
 }
 
 .skills-row {
@@ -313,14 +307,6 @@ ul {
 	line-height: 1rem;
 	margin: grid(.5);
 	width: grid(10);
-}
-
-.scaling-svg {
-	position: absolute; 
-	height: 100%; 
-	width: 100%; 
-	left: 0; 
-	top: 0;
 }
 
 form {

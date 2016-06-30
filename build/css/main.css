@@ -166,14 +166,6 @@ ul {
         -ms-flex: 2;
             flex: 2; }
 
-.header-img {
-  margin-top: -64px;
-  position: relative;
-  height: 0;
-  width: 100%;
-  padding: 0;
-  padding-bottom: 100%; }
-
 .skills-row {
   -ms-flex-line-pack: distribute;
       align-content: space-around;
@@ -258,13 +250,6 @@ ul {
   line-height: 1rem;
   margin: 4px;
   width: 80px; }
-
-.scaling-svg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0; }
 
 form {
   margin: 0 auto; }
