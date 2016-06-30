@@ -111,12 +111,12 @@ a {
 
 main {
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column nowrap;
 	max-width: 1280px;
 }
 
 section {
-	flex: 1;
+	flex: 1 0 auto;
 	min-height: 100vh;
 	padding: 0 0 grid(5);
 
@@ -227,9 +227,6 @@ ul {
 	}
 }
 
-.header-img {
-}
-
 .skills-row {
 	@extend .row;
 	align-content: space-around;
@@ -238,6 +235,10 @@ ul {
 	.column {
 		flex: 0 0 auto;
 	}
+}
+
+.header-svg {
+
 }
 
 .portfolio-square {
