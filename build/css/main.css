@@ -47,7 +47,8 @@ main {
   display: flex;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
-  max-width: 1280px; }
+  max-width: 1280px;
+  margin: 0 auto; }
 
 section {
   -webkit-box-flex: 1;
