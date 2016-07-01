@@ -428,13 +428,14 @@
 				</ul>
 			</nav>
 			<article class="row">
-				<form>
+				<form id="contact-form" method="post" action="mailer.php">
+					<div id="form-messages"></div>
 					<label>Name:</label>
-					<input type="text" name="name" class="text">
+					<input type="text" id="name" name="name" class="text">
 					<label>Email:</label>
-					<input type="email" name="email" class="text">
+					<input type="email" id="email" name="email" class="text">
 					<label>Message:</label>
-					<textarea name="message" class="text"></textarea>
+					<textarea name="message" id="message" class="text"></textarea>
 					<div class="buttons">
 						<input type="submit" name="submit" id="submit" value="submit" class="button">
 						<input type="reset" name="clear" id="clear" value="clear" class="button">

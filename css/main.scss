@@ -126,7 +126,7 @@ p {
 		border-bottom: 1px dashed;
 
 		&:hover {
-				color: $col6;
+			color: $col6;
 		}
 	}
 }
@@ -336,6 +336,7 @@ form {
 		color: $col2;
 		z-index: 2;
 		position: relative;
+		pointer-events: none;
 	}
 
 	.text {
@@ -344,6 +345,8 @@ form {
 		background-color: $nav;
 		border: none;
 		width: grid(38);
+		color: $white;
+		padding: 0 grid(1);
 	}
 
 	input.text {
@@ -364,6 +367,20 @@ form {
 		margin: 0 auto;
 		text-align: center;
 	}
+}
+
+.success, .error {
+	border: 1px dashed;
+	border-radius: 2px;
+	padding: grid(1);
+}
+
+.success {
+	color: $col2;
+}
+
+.error {
+	color: $col6;
 }
 
 .social-bar {

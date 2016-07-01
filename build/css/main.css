@@ -272,13 +272,16 @@ form {
     line-height: 3.5rem;
     color: #abcc85;
     z-index: 2;
-    position: relative; }
+    position: relative;
+    pointer-events: none; }
   form .text {
     position: relative;
     z-index: 1;
     background-color: #576a7c;
     border: none;
-    width: 304px; }
+    width: 304px;
+    color: #fff;
+    padding: 0 8px; }
   form input.text {
     height: 32px; }
   form textarea.text {
@@ -290,6 +293,17 @@ form {
   form .buttons {
     margin: 0 auto;
     text-align: center; }
+
+.success, .error {
+  border: 1px dashed;
+  border-radius: 2px;
+  padding: 8px; }
+
+.success {
+  color: #abcc85; }
+
+.error {
+  color: #a0bad8; }
 
 .social-bar {
   -ms-flex-preferred-size: 100%;
