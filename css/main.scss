@@ -64,7 +64,8 @@ html {
 }
 
 body {
-	background-color: $white;
+	background-image: url('../img/pattern.png');
+	background-color: $nav;
 	margin: 0;
 	text-shadow: $shadow;
 	color: $white;
@@ -105,6 +106,8 @@ main {
 	flex-flow: column nowrap;
 	max-width: 1280px;
 	margin: 0 auto;
+	border-left: 1px solid $nav;
+	border-right: 1px solid $nav;
 }
 
 section {
