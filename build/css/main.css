@@ -61,8 +61,15 @@ section {
 a {
   text-decoration: none; }
 
+p a {
+  color: inherit;
+  border-bottom: 1px dashed; }
+  p a:hover {
+    color: #a0bad8; }
+
 .home {
-  background-color: #3e494d; }
+  background-color: #3e494d;
+  position: relative; }
 
 .skills {
   background-color: #6c86a2; }
@@ -88,7 +95,9 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2; }
   nav a {
     color: #abcc85;
     font-weight: bold;
@@ -314,3 +323,61 @@ form {
           justify-content: center;
   font-size: 1.75rem;
   color: #6c86a2; }
+
+.header-content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+.header-social {
+  display: none;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-item-align: center;
+      align-self: center; }
+  @media only screen and (min-width: 768px) {
+    .header-social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.header-intro {
+  margin: 160px auto;
+  padding: 8px;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-shadow: -1px -1px 0 #3e494d, 1px -1px 0 #3e494d, -1px 1px 0 #3e494d, 1px 1px 0 #3e494d; }
+  .header-intro p {
+    margin: 16px;
+    padding: 8px 0; }
+  .header-intro p:last-child {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    color: #c56666;
+    font-weight: bold; }

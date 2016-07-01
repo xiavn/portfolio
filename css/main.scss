@@ -7,6 +7,7 @@ $col6: #a0bad8;
 $nav: #576a7c;
 $white: #fff;
 $shadow: 0 2px 4px rgba(0, 0, 0, .34);
+$outline: -1px -1px 0 $col1, 1px -1px 0 $col1, -1px 1px 0 $col1, 1px 1px 0 $col1;
 $xsmall: 480px;
 $small: 768px;
 $medium: 992px;
@@ -119,8 +120,20 @@ a {
 	text-decoration: none;
 }
 
+p {
+	a {
+		color: inherit;
+		border-bottom: 1px dashed;
+
+		&:hover {
+				color: $col6;
+		}
+	}
+}
+
 .home {
 	background-color: $col1;
+	position: relative;
 }
 
 .skills {
@@ -144,6 +157,8 @@ nav {
 	height: grid(10);
 	justify-content: center;
 	margin-bottom: grid(5);
+	position: relative;
+	z-index: 2;
 
 	a {
 	color: $col2;
@@ -239,10 +254,6 @@ ul {
 	.column {
 		flex: 0 0 auto;
 	}
-}
-
-.header-svg {
-
 }
 
 .portfolio-square {
@@ -376,4 +387,50 @@ form {
 	justify-content: center;
 	font-size: 1.75rem;
 	color: $col3;
+}
+
+.header-content {
+	position: absolute;
+	display: flex;
+	flex-flow: column nowrap;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: flex-end;
+	align-content: stretch;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.header-social {
+	display: none;
+	flex-basis: auto;
+	align-self: center;
+
+	@media only screen and (min-width : $small) {
+		display: flex;
+    }
+}
+
+.header-intro {
+	margin: grid(20) auto;
+	padding: grid(1);
+	max-width: 400px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	flex: 1;
+	text-shadow: $outline;
+
+	p {
+		margin: grid(2);
+		padding: grid(1) 0;
+	}
+
+	p:last-child {
+		align-self: flex-end;
+		color: $col5;
+		font-weight: bold;
+	}
 }
