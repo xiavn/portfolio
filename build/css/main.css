@@ -13,7 +13,7 @@ html {
 body {
   background-color: #fff;
   margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.34);
   color: #fff; }
 
 h1 {
@@ -41,13 +41,6 @@ h4 {
   font-family: Satisfy, cursive;
   font-size: 24px; }
 
-a {
-  color: #abcc85;
-  font-weight: bold;
-  text-decoration: none; }
-  a:hover {
-    border-bottom: 1px dotted; }
-
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,6 +57,9 @@ section {
   padding: 0 0 40px; }
   section:last-child {
     padding: 0; }
+
+a {
+  text-decoration: none; }
 
 .home {
   background-color: #3e494d; }
@@ -93,6 +89,12 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 40px; }
+  nav a {
+    color: #abcc85;
+    font-weight: bold;
+    text-decoration: none; }
+    nav a:hover {
+      border-bottom: 1px dotted; }
 
 .nav-title {
   display: none;
@@ -294,9 +296,21 @@ form {
       align-self: flex-end; }
 
 .social-btn {
-  width: 64px;
-  height: 64px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+  width: 48px;
+  height: 48px;
   background-color: #fff;
   border: 2px solid #6c86a2;
   border-radius: 50%;
-  margin: 8px; }
+  margin: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.75rem;
+  color: #6c86a2; }

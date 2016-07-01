@@ -6,7 +6,7 @@ $col5: #c56666;
 $col6: #a0bad8;
 $nav: #576a7c;
 $white: #fff;
-$shadow: 0 2px 4px rgba(0, 0, 0, .24);
+$shadow: 0 2px 4px rgba(0, 0, 0, .34);
 $xsmall: 480px;
 $small: 768px;
 $medium: 992px;
@@ -99,16 +99,6 @@ h4 {
 	font-size: 24px;
 }
 
-a {
-	color: $col2;
-	font-weight: bold;
-	text-decoration: none;
-
-	&:hover {
-		border-bottom: 1px dotted;
-	}
-}
-
 main {
 	display: flex;
 	flex-flow: column nowrap;
@@ -123,6 +113,10 @@ section {
 	&:last-child {
 		padding: 0;
 	}
+}
+
+a {
+	text-decoration: none;
 }
 
 .home {
@@ -150,6 +144,16 @@ nav {
 	height: grid(10);
 	justify-content: center;
 	margin-bottom: grid(5);
+
+	a {
+	color: $col2;
+	font-weight: bold;
+	text-decoration: none;
+
+		&:hover {
+			border-bottom: 1px dotted;
+		}
+	}
 }
 
 .nav-title {
@@ -360,10 +364,16 @@ form {
 }
 
 .social-btn {
-	width: grid(8);
-	height: grid(8);
+	@include box-shadow(2);
+	width: grid(6);
+	height: grid(6);
 	background-color: $white;
 	border: 2px solid $col3;
 	border-radius: 50%;
 	margin: grid(1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.75rem;
+	color: $col3;
 }
