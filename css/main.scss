@@ -310,6 +310,47 @@ ul {
 	}
 }
 
+.modal {
+	@include box-shadow(3);
+	height: 90vh;
+	background-color: rgba($col1, 0.95);
+	min-width: 80vw;
+	max-width: 960px;
+	position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    padding: grid(1);
+    display: none;
+
+    .close-btn {
+    	@include box-shadow(2);
+    	position: absolute;
+    	font-size: 1.5rem;
+    	width: 2.5rem;
+    	height: 2.5rem;
+    	background-color: $nav;
+    	border-radius: 50%;
+    	text-align: center;
+    	top: grid(3);
+    	right: grid(3);
+    	line-height: 2.5rem;
+    	cursor: pointer;
+    }
+
+    .modal-inner {
+    	border: 3px dashed $col2;
+    	padding: grid(3);
+    	height: 100%;
+    	text-align: justify;
+
+    	.button {
+			margin: 0 auto;
+		}
+    }
+}
+
 .button {
 	@include box-shadow(1);
 	align-content: center;
@@ -389,6 +430,7 @@ form {
 .social-bar {
 	flex-basis: 100%;
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
 	list-style: none;
 	align-self: flex-end;

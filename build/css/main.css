@@ -241,6 +241,41 @@ ul {
         align-self: flex-end;
     cursor: pointer; }
 
+.modal {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
+  height: 90vh;
+  background-color: rgba(62, 73, 77, 0.95);
+  min-width: 80vw;
+  max-width: 960px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5;
+  padding: 8px;
+  display: none; }
+  .modal .close-btn {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #576a7c;
+    border-radius: 50%;
+    text-align: center;
+    top: 24px;
+    right: 24px;
+    line-height: 2.5rem;
+    cursor: pointer; }
+  .modal .modal-inner {
+    border: 3px dashed #abcc85;
+    padding: 24px;
+    height: 100%;
+    text-align: justify; }
+    .modal .modal-inner .button {
+      margin: 0 auto; }
+
 .button {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24), 0 1px 6px rgba(0, 0, 0, 0.12);
   -ms-flex-line-pack: center;
@@ -314,6 +349,8 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
