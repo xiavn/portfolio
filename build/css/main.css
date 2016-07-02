@@ -193,7 +193,6 @@ ul {
 
 .portfolio-square {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
-  background-image: url(../img/rumour.png);
   background-color: #3e494d;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;

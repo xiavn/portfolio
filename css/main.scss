@@ -262,7 +262,6 @@ ul {
 
 .portfolio-square {
 	@include box-shadow(3);
-	background-image: url(../img/rumour.png);
 	background-color: $col1;
 	flex-basis: auto;
 	margin: grid(1);
