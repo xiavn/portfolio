@@ -241,6 +241,9 @@ ul {
         align-self: flex-end;
     cursor: pointer; }
 
+.hidden {
+  display: none; }
+
 .modal {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
   height: 90vh;
@@ -253,8 +256,7 @@ ul {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 5;
-  padding: 8px;
-  display: none; }
+  padding: 8px; }
   .modal .close-btn {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
     position: absolute;

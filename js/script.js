@@ -21,10 +21,14 @@ var portfolio  =[
 function createPortfolio(data) {
 	var portfolioDisplay = "";
 	//For each project generate an individual portfolio square
-	data.forEach(function createSquare(project) {
+	data.forEach(function createSquare(project,index) {
+		portfolio[index].id = index;
 		var name = project.name,
 			snippet = project.snippet,
 			tags = project.tags[0],
+			desc = project.description,
+			link = project.link,
+			id = project.id;
 			image = project.image;
 
 		//Add additional tags
@@ -32,20 +36,40 @@ function createPortfolio(data) {
 			tags+= " | " + project.tags[i];
 		}
 
-		portfolioDisplay+= "<div class='portfolio-square'><div><img src='../img/" +
+		portfolioDisplay+= "<div class='portfolio-square' id='" +
+		id + 
+		"'><div><img src='../img/" +
 		image +
 		"'></div><div class='overlay'><h4>" +
 		name +
 		"</h4><p>" +
 		 snippet +
-		 "</p><a class='button'>read more</a><span>" +
+		 "</p><a class='button' id='read-more'>read more</a><span>" +
 		 tags +
 		 "</span></div></div>";
-	});	
-	//Affix each square to the main portfolio display
-	$("#portfolio-display").html(portfolioDisplay);
-}
+
+		 //Generate the html for the modal pop up
+		portfolio[id].modal = "<h1>" + 
+		name +
+		"</h1><p>" + 
+		desc + 
+		"</p><a href='" +
+		link +
+		"' target='_blank' class='button'>view project</a>";
+		});	
+		//Affix each square to the main portfolio display
+		$("#portfolio-display").append(portfolioDisplay);
+	}
 	
 $(document).ready(function(){
-	//createPortfolio(portfolio);
+	createPortfolio(portfolio);
+	//Load the modal into view with the correct information.
+	$('#read-more').on("click", function() {
+		var id = $(this).parent().parent().attr('id');
+		$('.modal-inner').html(portfolio[id].modal);
+		$('.modal').removeClass("hidden");
+	});
+	$('.close-btn').on("click", function() {
+		$('.modal').addClass("hidden");
+	});
 });

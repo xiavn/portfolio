@@ -310,6 +310,10 @@ ul {
 	}
 }
 
+.hidden {
+	display: none;
+}
+
 .modal {
 	@include box-shadow(3);
 	height: 90vh;
@@ -322,7 +326,6 @@ ul {
     transform: translate(-50%, -50%);
     z-index: 5;
     padding: grid(1);
-    display: none;
 
     .close-btn {
     	@include box-shadow(2);
