@@ -43,7 +43,7 @@ h3, h4 {
 h4 {
   color: #abcc85;
   font-family: Satisfy, cursive;
-  font-size: 24px; }
+  font-size: 1.5rem; }
 
 main {
   display: -webkit-box;
@@ -216,7 +216,7 @@ ul {
   overflow: hidden; }
   .portfolio-square .overlay {
     position: absolute;
-    top: 168px;
+    top: calc(216px - (2rem + 16px));
     background-color: rgba(62, 73, 77, 0.5);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -262,19 +262,25 @@ ul {
 
 .modal {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
-  height: 90vh;
   background-color: rgba(62, 73, 77, 0.95);
-  min-width: 80vw;
-  max-width: 960px;
-  position: fixed;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 2rem;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   z-index: 5;
-  padding: 8px; }
+  padding: 8px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+  @media only screen and (min-width: 768px) {
+    .modal {
+      height: 90vh;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      min-width: 80vw;
+      max-width: 960px;
+      font-size: 1rem; } }
   .modal .close-btn {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
     position: absolute;
@@ -294,7 +300,12 @@ ul {
     height: 100%;
     text-align: justify; }
     .modal .modal-inner .button {
-      margin: 0 auto; }
+      margin: 0 auto;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0); }
 
 .button {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24), 0 1px 6px rgba(0, 0, 0, 0.12);
