@@ -402,16 +402,13 @@ form {
   z-index: 1; }
 
 .header-social {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   -ms-flex-item-align: center;
       align-self: center; }
-  @media only screen and (min-width: 768px) {
-    .header-social {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
 
 .header-intro {
   margin: 160px auto;
