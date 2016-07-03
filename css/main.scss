@@ -61,6 +61,9 @@ html {
 	@media only screen and (min-width : $small) {
 		font-size: 16px;
 	}
+	@media only screen and (min-width : $large) {
+		font-size: 18px;
+	}
 }
 
 body {
@@ -150,6 +153,12 @@ p {
 
 .contact {
 	background-color: $col5;
+	display: flex;
+	flex-flow: column wrap;
+
+	.row {
+		flex: 1 1 auto;
+	}
 }
 
 nav {
@@ -292,6 +301,12 @@ ul {
 		}
 	}
 
+	h4 {
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
 	p {
 		font-size: 12px;
 		padding: 0;
@@ -322,6 +337,8 @@ ul {
 	min-width: 80vw;
 	max-width: 960px;
 	position: fixed;
+	font-size: 1.5rem;
+	line-height: 2rem;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -364,13 +381,12 @@ ul {
 	border-radius: 2px;
 	color: $col1;
 	display: flex;
-	font-size: 12px;
 	font-weight: bold;
-	height: grid(3);
+	height: 2em;
 	justify-content: center;
 	line-height: 1rem;
 	margin: grid(.5);
-	width: grid(10);
+	width: 6.5em;
 }
 
 form {
