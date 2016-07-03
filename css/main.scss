@@ -284,7 +284,8 @@ ul {
 		width: 216px;
 		transition: all 1s ease-in-out;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: rgba($col1, .75);
 			top: 0;
 			padding: grid(1);

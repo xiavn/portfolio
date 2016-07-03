@@ -222,7 +222,7 @@ ul {
     width: 216px;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
-    .portfolio-square .overlay:hover {
+    .portfolio-square .overlay:hover, .portfolio-square .overlay:focus {
       background-color: rgba(62, 73, 77, 0.75);
       top: 0;
       padding: 8px; }
