@@ -118,6 +118,7 @@ section {
 	flex: 1 0 auto;
 	min-height: 100vh;
 	padding: 0 0 grid(5);
+	overflow: hidden;
 
 	&:last-child {
 		padding: 0;
