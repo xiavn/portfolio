@@ -302,7 +302,8 @@ ul {
     border: 3px dashed #abcc85;
     padding: 24px;
     height: 100%;
-    text-align: justify; }
+    text-align: justify;
+    overflow-y: auto; }
     .modal .modal-inner .button {
       margin: 0 auto;
       position: absolute;
