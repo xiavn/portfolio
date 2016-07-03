@@ -62,6 +62,7 @@ function createPortfolio(data) {
 	}
 	
 $(document).ready(function(){
+	$('body').bind('touchstart', function() {});
 	createPortfolio(portfolio);
 	//Load the modal into view with the correct information.
 	$('#read-more').on("click", function() {
