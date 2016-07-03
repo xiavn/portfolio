@@ -444,9 +444,9 @@ form {
       align-self: center; }
 
 .header-intro {
-  margin: 160px auto;
+  margin: 96px auto 8px;
   padding: 8px;
-  max-width: 400px;
+  max-width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,6 +459,9 @@ form {
       -ms-flex: 1;
           flex: 1;
   text-shadow: -1px -1px 0 #3e494d, 1px -1px 0 #3e494d, -1px 1px 0 #3e494d, 1px 1px 0 #3e494d; }
+  @media only screen and (min-width: 768px) {
+    .header-intro {
+      margin: 160px auto; } }
   .header-intro p {
     margin: 16px;
     padding: 8px 0; }
@@ -467,3 +470,19 @@ form {
         align-self: flex-end;
     color: #c56666;
     font-weight: bold; }
+
+.svg-portrait {
+  display: none;
+  width: 25%;
+  position: absolute;
+  bottom: 16px;
+  margin: 16px; }
+  @media only screen and (orientation: portrait) {
+    .svg-portrait {
+      display: inline; } }
+
+.svg-landscape {
+  display: inline; }
+  @media only screen and (orientation: portrait) {
+    .svg-landscape {
+      display: none; } }

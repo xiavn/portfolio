@@ -511,14 +511,18 @@ form {
 }
 
 .header-intro {
-	margin: grid(20) auto;
+	margin: grid(12) auto grid(1);
 	padding: grid(1);
-	max-width: 400px;
+	max-width: 450px;
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 	flex: 1;
 	text-shadow: $outline;
+
+	@media only screen and (min-width : $small) {
+		margin: grid(20) auto;
+	}
 
 	p {
 		margin: grid(2);
@@ -529,5 +533,25 @@ form {
 		align-self: flex-end;
 		color: $col5;
 		font-weight: bold;
+	}
+}
+
+.svg-portrait {
+	display: none;
+	width: 25%;
+	position: absolute;
+	bottom: grid(2);
+	margin: grid(2);
+
+	@media only screen and (orientation: portrait) {
+		display: inline;
+	}
+}
+
+.svg-landscape {
+	display: inline;
+
+	@media only screen and (orientation: portrait) {
+		display: none;
 	}
 }
