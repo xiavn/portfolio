@@ -487,3 +487,10 @@ form {
   @media only screen and (orientation: portrait) {
     .svg-landscape {
       display: none; } }
+
+#bubble1,
+#bubble2 {
+  opacity: 0; }
+
+.water-lines {
+  opacity: 1; }

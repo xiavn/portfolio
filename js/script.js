@@ -154,15 +154,27 @@ $(document).ready(function(){
 	});
 
 	//Animations
-	var vw = $(window).width();
+	var vw = $(window).width(),
+		balloon = ".balloon",
+		bubbles = ["#bubble1", "#bubble2"];
+
+	//Balloon Drift
 	var drift = new TimelineMax({repeat: -1, yoyo: true});
-	drift.to("#balloon", 10, {y: 20, ease: Linear.easeInOut})
-	.to("#balloon", 20, {y: -20, ease: Linear.easeInOut})
-	.to("#balloon", 20, {y: 0, ease: Linear.easeInOut})
-	.to("#balloon", 10, {y: -10, ease: Linear.easeInOut})
-	.to("#balloon", 20, {y: 10, ease: Linear.easeInOut})
-	.to("#balloon", 10, {y: 0, ease: Linear.easeInOut})
-	.to("#balloon", 100, {x: vw, scaleX:0.4, scaleY:0.4, ease: Linear.easeInOut}, 0)
-	.to("#balloon", 5, {y: 5, ease: Linear.easeInOut})
-	.to("#balloon", 5, {y: 0, ease: Linear.easeInOut});
+	drift.to(balloon, 20, {y: 20, ease: Linear.easeInOut})
+	.to(balloon, 60, {y: -60, ease: Linear.easeInOut})
+	.to(balloon, 40, {y: 40, ease: Linear.easeInOut})
+	.to(balloon, 20, {y: -20, ease: Linear.easeInOut})
+	.to(balloon, 40, {y: 40, ease: Linear.easeInOut})
+	.to(balloon, 20, {y: -20, ease: Linear.easeInOut})
+	.to(balloon, 200, {x: vw, ease: Linear.easeInOut}, 0)
+	.to(balloon, 150, {scaleX:0, scaleY:0, ease: Linear.easeNone}, 50);
+
+	//Waterfall
+		//Bubbles
+	TweenMax.staggerTo(bubbles, 5, {
+		opacity: 1,
+		repeat: -1,
+		yoyo: true,
+		ease: Linear.easeNone
+	}, 5);
 });
