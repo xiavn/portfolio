@@ -1,5 +1,13 @@
 var portfolio = [
 		{
+			"name": "Markdown Previewer",
+			"snippet": "A FreeCodeCamp project to create a Markdown Previewer.",
+			"link": "http://codepen.io/xiavn/pen/zBpyBp",
+			"image": "markdown.png",
+			"tags": ["react", "markdown"],
+			"description": "For this project I had to use React to create a markdown previewer that would allow a user to enter text in markdown format and have it appear on the page correctly formatted. The display had to update as the user entered text so that the preview was always up to date. I used Markdown-It to provide the support for parsing the markdown."
+		},
+		{
 			"name": "Splash Page",
 			"snippet": "A commission to design a splash page for a games journalist's website.",
 			"link": "https://xiavn.github.io/dontquoteme/",
