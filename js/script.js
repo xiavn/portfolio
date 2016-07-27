@@ -1,5 +1,13 @@
 var portfolio = [
 		{
+			"name": "FreeCodeCamp Leaderboard",
+			"snippet": "A leaderboard designed to show and sort total points earned on FreeCodeCamp.",
+			"link": "https://codepen.io/xiavn/pen/grZpYp",
+			"image": "leaderboard.png",
+			"tags": ["react", "sorting"],
+			"description": "This project required me to use React to import an array of scores from FreeCodeCamp of either the most recent top scorers, or the all time scorers. The scoreboard then sorts and displays the information in descending order. The user is able to choose between loading the alltime scoreboard or the recent one using buttons at the tops of the page, they can then change the sorting of each leaderboard to be based on total score or the top scores in the last 30 days. Usernames also provide links to the user's relevant profile page."
+		},
+		{
 			"name": "Markdown Previewer",
 			"snippet": "A FreeCodeCamp project to create a Markdown Previewer.",
 			"link": "http://codepen.io/xiavn/pen/zBpyBp",
