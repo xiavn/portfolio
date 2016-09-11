@@ -1,5 +1,21 @@
 var portfolio = [
 		{
+			"name": "Game Of Life",
+			"snippet": "A Game Of Life created as part of FreeCodeCamp.",
+			"link": "http://codepen.io/xiavn/pen/VjJwXv",
+			"image": "life.png",
+			"tags": ["react", "timers", "loops", "mixins"],
+			"description": "The goal here was to create a working version of Conway's Game of Life. The user had to be able to start and stop the game, and be able to see the total number of 'generations' passed. In addition the board randomly generates a layout, but also allows the user to add their own starting cells, or clear the board entirely and draw their own starting layout. The user is also able to change the size of the board, and the speed of each generation. The SCSS for this project utilises loops and mixins in order to create responsive board grid patterns at each of the difference sizes."
+		},
+		{
+			"name": "Recipe Box",
+			"snippet": "An app designed to store and recall recipes, created as part of FreeCodeCamp.",
+			"link": "http://codepen.io/xiavn/pen/kXpVBB",
+			"image": "recipe.png",
+			"tags": ["react", "storage"],
+			"description": "For this project I was required to create an app that could store ingredients for recipes, local storage had to be utilised to save and recall a users recipes, and it had to offer a way for the user to add and remove recipes and ingredients."
+		},
+		{
 			"name": "FreeCodeCamp Leaderboard",
 			"snippet": "A leaderboard designed to show and sort total points earned on FreeCodeCamp.",
 			"link": "https://codepen.io/xiavn/pen/grZpYp",
